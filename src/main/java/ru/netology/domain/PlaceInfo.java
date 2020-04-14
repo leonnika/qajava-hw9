@@ -10,7 +10,7 @@ public class PlaceInfo {
     private int checkins; //число отметок в этом месте.
     private int updated; //дата обновления места в Unixtime.
     private int type; //тип места.
-    private  int country; //идентификатор страны.
+    private int country; //идентификатор страны.
     private int city; //идентификатор города.
     private String address; //адрес места
 
