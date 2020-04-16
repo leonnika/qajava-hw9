@@ -21,16 +21,11 @@ public class Post {
     private int[] markedAsAds = {0, 1}; //+информация о том, содержит ли запись отметку "реклама" (1 — да, 0 — нет).
     private boolean isFavorite; //+true, если объект добавлен в закладки у текущего пользователя.
     private int postponedId; //+идентификатор отложенной записи. Это поле возвращается тогда, когда запись стояла на таймере.
-    //private String accountNameUrl; //ссылка по имени аккаунта, возвращает на главную страницу
-    //private String avatarUrl;// ссылка на аватарку пользователя
     private int dataPost; //дата и время размещения поста
     private String textPostUrl; //ссылка на текст поста
-    //private String imageUrl; //ссылка на изображение к посту
-    //private int numberView; // количество просмотров
-    //private int numberLike; //количество лайков
-    //private int numberSharePost; //количество поделившихся постом
     private RepostPost reportPost; //репост на пост
     private CommentsInfo commentsInfo; // коменты к посту
+
     public int getIdNumber() {
         return idNumber;
     }
@@ -222,6 +217,5 @@ public class Post {
     public void setCommentsInfo(CommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
-
 
 }

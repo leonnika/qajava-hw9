@@ -3,6 +3,7 @@ package ru.netology.domain;
 public class GeoInfo {
     private String type; //тип места
     private String coordinates; //координаты места
+    private PlaceInfo placeInfo; //описание места (если оно добавлено)
 
     public String getType() {
         return type;
@@ -28,5 +29,4 @@ public class GeoInfo {
         this.placeInfo = placeInfo;
     }
 
-    private PlaceInfo placeInfo; //описание места (если оно добавлено)
 }
