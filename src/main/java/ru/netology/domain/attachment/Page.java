@@ -5,10 +5,10 @@ public class Page {
     private int groupId;
     private int creatorId;
     private String title;
-    private int[] currentUserCanEdit = {0, 1};
-    private int[] currentUserCanEditAccess = {0, 1};
-    private int[] whoCanView = {0, 1, 2};
-    private int[] whoCanEdit = {0, 1, 2};
+    private int currentUserCanEdit;
+    private int currentUserCanEditAccess;
+    private int whoCanView;
+    private int whoCanEdit;
     private int edited;
     private int created;
     private int editorId;
@@ -51,35 +51,35 @@ public class Page {
         this.title = title;
     }
 
-    public int[] getCurrentUserCanEdit() {
+    public int getCurrentUserCanEdit() {
         return currentUserCanEdit;
     }
 
-    public void setCurrentUserCanEdit(int[] currentUserCanEdit) {
+    public void setCurrentUserCanEdit(int currentUserCanEdit) {
         this.currentUserCanEdit = currentUserCanEdit;
     }
 
-    public int[] getCurrentUserCanEditAccess() {
+    public int getCurrentUserCanEditAccess() {
         return currentUserCanEditAccess;
     }
 
-    public void setCurrentUserCanEditAccess(int[] currentUserCanEditAccess) {
+    public void setCurrentUserCanEditAccess(int currentUserCanEditAccess) {
         this.currentUserCanEditAccess = currentUserCanEditAccess;
     }
 
-    public int[] getWhoCanView() {
+    public int getWhoCanView() {
         return whoCanView;
     }
 
-    public void setWhoCanView(int[] whoCanView) {
+    public void setWhoCanView(int whoCanView) {
         this.whoCanView = whoCanView;
     }
 
-    public int[] getWhoCanEdit() {
+    public int getWhoCanEdit() {
         return whoCanEdit;
     }
 
-    public void setWhoCanEdit(int[] whoCanEdit) {
+    public void setWhoCanEdit(int whoCanEdit) {
         this.whoCanEdit = whoCanEdit;
     }
 

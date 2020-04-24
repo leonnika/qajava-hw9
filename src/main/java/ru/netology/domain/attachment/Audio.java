@@ -11,8 +11,8 @@ public class Audio {
     private int albumId;
     private int genreId;
     private int date;
-    private int[] noSearch = {1};
-    private int[] isHq = {1};
+    private int noSearch;
+    private int isHq;
 
     public int getId() {
         return id;
@@ -94,19 +94,19 @@ public class Audio {
         this.date = date;
     }
 
-    public int[] getNoSearch() {
+    public int getNoSearch() {
         return noSearch;
     }
 
-    public void setNoSearch(int[] noSearch) {
+    public void setNoSearch(int noSearch) {
         this.noSearch = noSearch;
     }
 
-    public int[] getIsHq() {
+    public int getIsHq() {
         return isHq;
     }
 
-    public void setIsHq(int[] isHq) {
+    public void setIsHq(int isHq) {
         this.isHq = isHq;
     }
 }

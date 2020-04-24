@@ -9,7 +9,7 @@ public class Market {
     private CategoryInfo category;
     private String thumbPhoto;
     private int date;
-    private int[] availability = {0, 1, 2};
+    private int availability;
     private boolean isFavorite;
 
     public int getId() {
@@ -76,11 +76,11 @@ public class Market {
         this.date = date;
     }
 
-    public int[] getAvailability() {
+    public int getAvailability() {
         return availability;
     }
 
-    public void setAvailability(int[] availability) {
+    public void setAvailability(int availability) {
         this.availability = availability;
     }
 

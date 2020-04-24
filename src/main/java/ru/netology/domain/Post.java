@@ -14,11 +14,11 @@ public class Post {
     private PostSource postSource; //+ объект описывающий способ размещения записи на стене
     private GeoInfo geoInfo; //+ объект описывающий информацию о местоположении
     private int signerId; //+идентификатор автора, если запись была опубликована от имени сообщества и подписана пользователем;
-    private int[] canPin = {0, 1}; //+информация о том, может ли текущий пользователь закрепить запись (1 — может, 0 — не может).
-    private int[] canDelete = {0, 1}; //+информация о том, может ли текущий пользователь удалить запись (1 — может, 0 — не может).
-    private int[] canEdit = {0, 1}; //+информация о том, может ли текущий пользователь редактировать запись (1 — может, 0 — не может).
-    private int[] isPinned = {1}; //+информация о том, что запись закреплена
-    private int[] markedAsAds = {0, 1}; //+информация о том, содержит ли запись отметку "реклама" (1 — да, 0 — нет).
+    private int canPin; //+информация о том, может ли текущий пользователь закрепить запись (1 — может, 0 — не может).
+    private int canDelete; //+информация о том, может ли текущий пользователь удалить запись (1 — может, 0 — не может).
+    private int canEdit; //+информация о том, может ли текущий пользователь редактировать запись (1 — может, 0 — не может).
+    private int isPinned; //+информация о том, что запись закреплена
+    private int markedAsAds; //+информация о том, содержит ли запись отметку "реклама" (1 — да, 0 — нет).
     private boolean isFavorite; //+true, если объект добавлен в закладки у текущего пользователя.
     private int postponedId; //+идентификатор отложенной записи. Это поле возвращается тогда, когда запись стояла на таймере.
     private int dataPost; //дата и время размещения поста
@@ -130,43 +130,43 @@ public class Post {
         this.signerId = signerId;
     }
 
-    public int[] getCanPin() {
+    public int getCanPin() {
         return canPin;
     }
 
-    public void setCanPin(int[] canPin) {
+    public void setCanPin(int canPin) {
         this.canPin = canPin;
     }
 
-    public int[] getCanDelete() {
+    public int getCanDelete() {
         return canDelete;
     }
 
-    public void setCanDelete(int[] canDelete) {
+    public void setCanDelete(int canDelete) {
         this.canDelete = canDelete;
     }
 
-    public int[] getCanEdit() {
+    public int getCanEdit() {
         return canEdit;
     }
 
-    public void setCanEdit(int[] canEdit) {
+    public void setCanEdit(int canEdit) {
         this.canEdit = canEdit;
     }
 
-    public int[] getIsPinned() {
+    public int getIsPinned() {
         return isPinned;
     }
 
-    public void setIsPinned(int[] isPinned) {
+    public void setIsPinned(int isPinned) {
         this.isPinned = isPinned;
     }
 
-    public int[] getMarkedAsAds() {
+    public int getMarkedAsAds() {
         return markedAsAds;
     }
 
-    public void setMarkedAsAds(int[] markedAsAds) {
+    public void setMarkedAsAds(int markedAsAds) {
         this.markedAsAds = markedAsAds;
     }
 
@@ -217,5 +217,4 @@ public class Post {
     public void setCommentsInfo(CommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
-
 }
